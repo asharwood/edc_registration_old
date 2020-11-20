@@ -1,4 +1,4 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.urls import path, re_path
 
 # Uncomment the next two lines to enable the admin:
@@ -19,4 +19,7 @@ urlpatterns = (
 
     # Uncomment the next line to enable the admin:
      path('admin/', admin.site.urls),
+     
+     path('captcha/', include('captcha.urls')),
+     
 )

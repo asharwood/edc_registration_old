@@ -1,6 +1,7 @@
 from django import forms
 
 from edc.register.models import TITLE_CHOICES
+from captcha.fields import CaptchaField
 
 FIELD_SIZE = 40 
 
@@ -15,7 +16,7 @@ class UserForm(forms.Form):
    institute  = forms.CharField(widget=forms.TextInput(attrs={'size': FIELD_SIZE,}), label='Institution/compay name', required=True)
    dataUse    = forms.CharField(label='Proposed use of data', required=True, widget=forms.Textarea(attrs={'cols':80,'rows':5}))
    acceptConditions = forms.BooleanField(widget=forms.CheckboxInput(), required=True)
-
+   captcha = CaptchaField()
 class ConditionForm(forms.ModelForm):
 
    text = forms.CharField(required=False, widget=forms.Textarea(attrs={'rows':'25', 'cols': '100'}))

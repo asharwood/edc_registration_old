@@ -126,6 +126,14 @@ If you do not provide sufficient information it will delay your application.
 <td>{{ form.acceptConditions }}</td>
 </tr>
 
+{% if form.captcha.errors %}
+   <tr bgcolor="#F0888A">
+{% else %}
+  <tr>
+{% endif %}
+<td><b>Please enter the characters from the image:</b></td>
+<td>{{ form.captcha }}</td>
+</tr>
 
 
 </table>

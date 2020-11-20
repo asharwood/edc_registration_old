@@ -32,6 +32,8 @@ def register_user(request, datasetid):
       form = UserForm(request.POST)
 
       if form.is_valid():
+         human = True
+	 
          cd = form.cleaned_data
 	 
          condition = Condition.objects.get(id=request.POST.get('conditionid'))
@@ -72,8 +74,8 @@ def register_user(request, datasetid):
 #   Get latest conditions for the given dataset
 #         
    conditions = Condition.objects.filter(dataset__exact=datasetid).order_by('-version')[0] 
-
-   return render_to_response('register_user.html', locals())
+   return render(request, 'register_user.html', locals())
+#   return render_to_response('register_user.html', locals())
 
 
 def thanks (request):
