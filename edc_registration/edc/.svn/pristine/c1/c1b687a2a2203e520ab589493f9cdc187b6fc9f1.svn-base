@@ -1,0 +1,25 @@
+<html>
+<head>
+<link href="http://ukedc.rl.ac.uk/StyleSheets/ukerc.css" rel="stylesheet" type="text/css">
+
+<style typ="text/css">
+body {margin: 10px;}
+</style>
+
+</head>
+
+<body>
+
+{% include "header.html" %}
+<p>
+Thank you. Your registration will now be processed and we will contact you when it has been completed. A copy
+of your registration information had been emailed to you.
+<p>
+
+{% include "trailer.html" %}
+
+ 
+</body>
+
+</html>
+

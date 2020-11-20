@@ -1,0 +1,23 @@
+You have registered for dataset: {{ user.condition.dataset.name }}. The EDC will process your request and 
+will be in touch shortly. Please note the terms and conditions associated with this dataset which you
+have agreed to by submiting this application.
+
+Your details:
+
+Title:      {{ user.title }}
+First name: {{ user.firstName }}
+Last name:  {{ user.lastName }}
+Email:      {{ user.emailaddress }}
+
+Group/Dept:          {{ user.department }}
+Institution/company: {{ user.institute }}
+
+Proposed use of data:
+
+"{{ user.dataUse }}"
+
+
+You have agreed to abide by the following terms and conditions:
+
+{{user.condition.text}}
+

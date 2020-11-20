@@ -1,0 +1,22 @@
+
+A new user has applied for access to a restricted dataset:
+
+Dataset: {{ user.condition.dataset.name }}
+
+Title:      {{ user.title }}
+First name: {{ user.firstName }}
+Last name:  {{ user.lastName }}
+Email:      {{ user.emailaddress }}
+
+Group/Dept:          {{ user.department }}
+Institution/company: {{ user.institute }}
+
+Proposed use of data:
+
+"{{ user.dataUse }}"
+
+
+The user has agreed to accept the following conditions applying to this dataset:
+
+{{user.condition.text}}
+
