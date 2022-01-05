@@ -12,8 +12,8 @@ from edc.register.models import *
 from edc.register.forms import UserForm
 
 
-##INFO_EMAIL = ('andrew.harwood@stfc.ac.uk','EDCmanager@stfc.ac.uk')
-INFO_EMAIL = ('andrew.harwood@stfc.ac.uk',)
+INFO_EMAIL = ('EDCmanager@stfc.ac.uk')
+#INFO_EMAIL = ('andrew.harwood@stfc.ac.uk',)
 
 def select_dataset(request):
 
